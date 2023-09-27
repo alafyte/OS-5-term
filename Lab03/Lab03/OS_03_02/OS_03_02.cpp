@@ -17,15 +17,15 @@ int main()
 
     if (CreateProcess(path1, NULL, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &si, &pi1))
     {
-        std::cout << "Дочерний процесс OS_02_1 создан" << endl;
+        std::cout << "Child process OS_02_1 has been created" << endl;
     }
-    else std::cout << "Дочерний процесс OS_02_1 не создан" << endl;
+    else std::cout << "Child process OS_02_1 hasn't been created" << endl;
 
     if (CreateProcess(path2, NULL, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &si, &pi2))
     {
-        std::cout << "Дочерний процесс OS_02_2 создан" << endl;
+        std::cout << "Child process OS_02_2 has been created" << endl;
     }
-    else std::cout << "Дочерний процесс OS_02_2 не создан" << endl;
+    else std::cout << "Child process OS_02_2 hasn't been created" << endl;
 
     for (int i = 0; i < 100; i++)
     {
