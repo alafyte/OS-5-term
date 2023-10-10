@@ -12,6 +12,10 @@ DWORD WINAPI ChildThread_T1()
 
 	for (short i = 0; i < 50; ++i)
 	{
+		if (i == 25)
+		{
+			Sleep(10000);
+		}
 		cout << "PID = " << pid << ", Thread1 ID = " << tid << endl;
 		Sleep(1000);
 	}
@@ -27,6 +31,11 @@ DWORD WINAPI ChildThread_T2()
 
 	for (short i = 0; i < 125; ++i)
 	{
+
+		if (i == 80)
+		{
+			Sleep(15000);
+		}
 		cout << "PID = " << pid << ", Thread2 ID = " << tid << endl;
 		Sleep(1000);
 	}
